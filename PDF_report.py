@@ -5,16 +5,15 @@ import os
 import datetime
 from reportlab.platypus import Image, BaseDocTemplate, SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
 from reportlab.lib.styles import getSampleStyleSheet
-from reportlab.lib import units
+
 from reportlab.lib import colors
 from reportlab.lib.units import inch, cm
 # для шрифтов
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase import ttfonts
-from reportlab.pdfgen import canvas
+
 # размеры страниц
 from reportlab.lib.pagesizes import A4, landscape
-from reportlab import rl_config
 
 class genPDF(object):
     Title = u"Привет, Мир!"
